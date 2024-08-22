@@ -13,6 +13,11 @@ namespace Notes.Application.Common.Mappings
         public AssemblyMappingProfile(Assembly assembly) =>
             ApplyMappingsFromAssembly(assembly);
 
+        public AssemblyMappingProfile()
+        {
+            
+        }
+
         private void ApplyMappingsFromAssembly(Assembly assembly)
         {
             var types = assembly.GetExportedTypes()
